@@ -231,45 +231,62 @@ color: Black;
 </div>
       
 <div id="WWE2K22" class="tabcontent">
-<Center><h2> WWE 2K22 </h2></Center>
-<div class="tab">
-<button class="tablinks" onclick="openCity(event, 'WWE2K22 2021')">WWE2K22 2021</button>
-     <button class="tablinks" onclick="openCity(event, 'WWE2K22 2022')">WWE2K22 2022</button>
-     <button class="tablinks" onclick="openCity(event, 'WWE2K22 2023')">WWE2K22 2023</button>
-     <button class="tablinks" onclick="openCity(event, 'WWE2K22 2024')">WWE2K22 2024</button>
-     <button class="tablinks" onclick="openCity(event, 'WWE2K22 2025')">WWE2K22 2025</button>
-     <button class="tablinks" onclick="openCity(event, 'WWE2K22 2026')">WWE2K22 2026</button>
-</div>
-
-<div id="WWE2K22 2021" class="tabcontent">
-        <h4><b><u>  WWE2K22 2021 </u></b></h4>
-            
-</div>
-    
-<div id="WWE2K22 2022" class="tabcontent">
-        <h4><b><u>WWE2K22 2022</u></b></h4>
-           
-</div>
-    
-<div id="WWE2K22 2023" class="tabcontent">
-        <h4><b><u>WWE2K22 2023</u></b></h4>
-            
-</div>
+  <h3> WWE 2K22 </h3>
+  <div class="page">
+       <button class="pagelinks" onclick="openCity(event, 'WWE2K22 2021')">WWE2K22 2021</button>
+       <button class="pagelinks" onclick="openCity(event, 'WWE2K22 2022')">WWE2K22 2022</button>
+       <button class="pagelinks" onclick="openCity(event, 'WWE2K22 2023')">WWE2K22 2023</button>
+       <button class="pagelinks" onclick="openCity(event, 'WWE2K22 2024')">WWE2K22 2024</button>
+       <button class="pagelinks" onclick="openCity(event, 'WWE2K22 2025')">WWE2K22 2025</button>
+       <button class="pagelinks" onclick="openCity(event, 'WWE2K22 2026')">WWE2K22 2026</button>
+  </div>
+  
+  <div id="WWE2K22 2021" class="pagecontent">
+          <h4><b><u>  WWE2K22 2021 </u></b></h4>
+              
+  </div>
       
-<div id="WWE2K22 2024" class="tabcontent">
-        <h4><b><u>WWE2K22 2024</u></b></h4>
-</div>
-    
-<div id="WWE2K22 2025" class="tabcontent">
-        <h4><b><u>WWE2K22 2025</u></b></h4>
-</div>
-    
-<div id="WWE2K22 2026" class="tabcontent">
-      <h4><b><u>WWE2K22 2026</u></b></h4>
-</div>
+  <div id="WWE2K22 2022" class="tabcontent">
+          <h4><b><u>WWE2K22 2022</u></b></h4>
+             
+  </div>
+      
+  <div id="WWE2K22 2023" class="tabcontent">
+          <h4><b><u>WWE2K22 2023</u></b></h4>
+              
+  </div>
+        
+  <div id="WWE2K22 2024" class="tabcontent">
+          <h4><b><u>WWE2K22 2024</u></b></h4>
+  </div>
+      
+  <div id="WWE2K22 2025" class="tabcontent">
+          <h4><b><u>WWE2K22 2025</u></b></h4>
+  </div>
+      
+  <div id="WWE2K22 2026" class="tabcontent">
+        <h4><b><u>WWE2K22 2026</u></b></h4>
+  </div>
+  
+  <center><img src="WWE2K22R.jpg" style="width:50%;height:auto;"></center>
 
-<center><img src="WWE2K22R.jpg" style="width:50%;height:auto;"></center>
-</div>
+  <script>
+  function openCity(evt, cityName) {
+    var i, pagecontent, pagelinks;
+    pagecontent = document.getElementsByClassName("pagecontent");
+    for (i = 0; i < pagecontent.length; i++) {
+      pagecontent[i].style.display = "none";
+    }
+    pagelinks = document.getElementsByClassName("pagelinks");
+    for (i = 0; i < pagelinks.length; i++) {
+      pagelinks[i].className = pagelinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  </script>
+
+  </div>
 
 <script>
 function openCity(evt, cityName) {
