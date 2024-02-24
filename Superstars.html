@@ -47,6 +47,17 @@
       padding: 6px 12px;
       border-top: none;
     }
+
+    .image-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+  
+    .image {
+            margin-right: 20px; /* Add space between images */
+        }
 </style>
 
 <body>
@@ -216,9 +227,11 @@ color: White;
         
         <Center><img src="NXTB.jpg" style="width:100%;height:auto;"></center>
         <h3><b><u>Current Champions</u></b></h3>
-        <Center><img src="NXTC1.jpg.png" style="width:10%;height:auto;"><h5></h5><img src="NXTC2.png" style="width:10%;height:auto;"><h5></h5><img src="NXTC3.png" style="width:10%;height:auto;"></Center>
-        <center><h6><b><u>NXT Champion      NXT Women's Champion    NXT North American Champion</u></b></h6></Center>
-        <h5></h5>
+         <div class="image-container">
+          <img src="NXTC1.jpg.png" style="width:10%;height:auto;"class="image">
+          <img src="NXTC2.png" style="width:10%;height:auto;"class="image">
+          <img src="NXTC3.png" style="width:10%;height:auto;"class="image">
+         </div>
         <h3><b><u>NXT Roster</u></b></h3>
         <h4><b><u>Men</u></b></h4>
         <ul>
